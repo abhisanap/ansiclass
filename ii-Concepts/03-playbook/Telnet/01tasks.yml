@@ -15,7 +15,7 @@
     - name: Install Telnet-Client (client only)
       win_feature:
         name: Telnet-Client
-        state: absent
+        state: present
 
   # Handlers: handlers that are executed as a notify key from a task
 
