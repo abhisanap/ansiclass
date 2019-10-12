@@ -1,0 +1,9 @@
+---
+hosts: win-grp
+
+tasks: 
+ - name: Install Telnet-Client (client only)
+   win_feature:
+    name: Telnet-Client
+    state: present
+...
