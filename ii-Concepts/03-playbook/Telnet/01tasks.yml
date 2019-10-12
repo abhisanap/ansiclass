@@ -1,10 +1,26 @@
 ---
-hosts:
- win-grp
+-
+# Above - sign indicates a list item. 
+ 
+  # Target: where our play will run and options it will run with
+  hosts: 
+   win-grp
+  #gather_facts: false
 
-tasks: 
- - name: Install Telnet-Client (client only)
-   win_feature:
-    name: Telnet-Client
-    state: present
+  # Variable: variables that will apply to the play, on all target systems
+ 
+
+  # Task: the list of tasks that will be executed within the playbook
+  tasks:
+    - name: Install Telnet-Client (client only)
+      win_feature:
+        name: Telnet-Client
+        state: present
+
+  # Handlers: handlers that are executed as a notify key from a task
+
+  # Roles: list of roles to be imported into the play
+
+# Three dots indicate the end of a YAML document
+#ansible-playbook 01tasks.yml.yml
 ...
