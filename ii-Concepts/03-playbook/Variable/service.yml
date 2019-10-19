@@ -6,8 +6,8 @@
     -ext_variable.yml
   tasks:
    -name: stop BITS service
-    win_service: 
-       name: "{{servicenames[0]}}"
-       state: stopped
+    win_service:
+      name: "{{servicenames[0]}}"
+      state: stopped
 
 ....
