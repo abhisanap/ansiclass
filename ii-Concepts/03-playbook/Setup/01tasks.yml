@@ -4,7 +4,7 @@
  
   # Target: where our play will run and options it will run with
   hosts: 
-   win-grp
+   all
   #gather_facts: false
 
   # Variable: variables that will apply to the play, on all target systems
@@ -12,7 +12,7 @@
 
   # Task: the list of tasks that will be executed within the playbook
  - name: Collect only facts returned by facter
-  setup:
+   setup:
    
 
   # Handlers: handlers that are executed as a notify key from a task
