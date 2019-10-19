@@ -7,7 +7,7 @@
    
   task: 
    - name: STOP BITS service, if not stopped
-      win_service:
+     win_service:
         name: "{{servicenmes[0]}}"
         state: stopped
 ...
