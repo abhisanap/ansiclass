@@ -1,0 +1,13 @@
+---
+  hosts:
+   all
+  
+  Vars_files:
+   -ext_variables.yml
+   
+  task: 
+   - name: STOP BITS service, if not stopped
+      win_service:
+        name: "{{servicenmes[0]}}"
+        state: stopped
+...
