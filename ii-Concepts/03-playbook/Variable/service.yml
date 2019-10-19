@@ -5,8 +5,8 @@
   vars_files:
     ext_variable.yml
   tasks:
-   -name: stop BITS service
-    win_service: 
+   - name: stop BITS service
+     win_service: 
       name: "{{servicenames[0]}}"
       state: stopped
 
