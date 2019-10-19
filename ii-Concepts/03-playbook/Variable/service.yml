@@ -1,9 +1,8 @@
 ---
+ hosts:
+   all
 
-  hosts:
-    all
-
-  Vars_files:
+Vars_files:
    - ext_variables.yml
 
   task: 
@@ -11,5 +10,4 @@
      win_service:
         name: "{{servicenmes[0]}}"
         state: stopped
-
 ...
