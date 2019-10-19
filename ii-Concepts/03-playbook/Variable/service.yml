@@ -1,10 +1,9 @@
 ---
 -
-  hosts: all
-    
+  hosts:
+    all
   Vars_files:
-   -ext_variables.yml
-   
+   - ext_variables.yml
   task: 
    - name: STOP BITS service, if not stopped
      win_service:
