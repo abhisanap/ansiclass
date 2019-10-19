@@ -1,0 +1,10 @@
+---
+ hosts:
+   all
+
+ task: 
+  - name: service 
+     win_service:
+     name: BITS
+     State: Stopped
+...
