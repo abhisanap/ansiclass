@@ -11,6 +11,7 @@
  
 
   # Task: the list of tasks that will be executed within the playbook
+ tasks:
  - name: Collect only facts returned by facter
    setup:
    
