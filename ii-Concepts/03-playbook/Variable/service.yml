@@ -3,7 +3,7 @@
   hosts:
     all
   vars_Files:
-    -ext_variable.yml
+    ext_variable.yml
   tasks:
    -name: stop BITS service
     win_service:
