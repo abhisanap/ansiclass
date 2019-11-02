@@ -17,11 +17,11 @@
      win_service: 
        name: "{{item}}"
        state: >      
-          {% if {{item}} == "BITS" -%}
+          {% if item == "BITS" -%}
              stopped  
-          {% elif {{item}} == "Windows Audio" -%}
+          {% elif item == "Windows Audio" -%}
              started
-          {% elif {{item}} == "Dnscache" -%}
+          {% elif item == "Dnscache" -%}
              started
           {% else -%}
              service not found
