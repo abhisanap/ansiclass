@@ -3,7 +3,7 @@
  hosts: all
   #gather_facts: true # this will make not to gather facts before running tasks
 
-  tasks: 
+ tasks: 
     - name: Copy Files
       win_copy:
         content: "Welcome to {{ item }} ansible\n"
