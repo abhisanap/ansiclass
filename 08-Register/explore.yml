@@ -10,6 +10,7 @@
 
     - name: Show output
       debug:
-        var: services
+        var: {% services.name == "BITS" -%}
       
 ...
+ 
