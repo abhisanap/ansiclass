@@ -16,8 +16,7 @@
    - name: Start service BITS, if not started
      win_service:
       name: "{{item}}"
-      state :
-       loop: >   
+      state : >
           {% for Serv in "{{servicenames}}" -%}   
             {% if Serv == "BITS" -%}
              stopped  
