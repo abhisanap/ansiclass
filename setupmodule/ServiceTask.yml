@@ -14,7 +14,7 @@
     - Ext_variable.yml
   tasks:
     name: Start service BITS, if not started
-     win_service:
+     win_service: 
       name: "{{item}}"
       state : >
             {% if item == "BITS" -%}
