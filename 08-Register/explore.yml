@@ -10,7 +10,7 @@
 
     - name: Show output
       debug:
-        var: services
+        var: services.status | default(running)
            
 ...
  
