@@ -1,7 +1,4 @@
 ---
 servicesneedstodisable:
- - Bits
- - Windows Audio
- - Dnscache
- - spooler
+  [Bits, Dhcp, Dnscache]
 ...   
