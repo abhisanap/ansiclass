@@ -5,12 +5,12 @@
 
  tasks: 
     - name: Copy Files
-      win_copy:
-        content: "Welcome to {{ item }} ansible\n"
-        dest: c:\temp\test.txt
+      win_service:
+       name: "{{item}}"
+       state: stopped
       loop:
-           - dinesh
-           - basant
+           - BITS
+           - spooler
       when: ansible_distribution == "Microsoft Windows Server Datacenter"
    
 ...
