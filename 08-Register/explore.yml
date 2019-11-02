@@ -10,7 +10,6 @@
 
     - name: Show output
       debug:
-        var: {% services.status == "running" -%}
-      
+        var: "{{services.status}}"    
 ...
  
