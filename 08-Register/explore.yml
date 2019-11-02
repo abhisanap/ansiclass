@@ -10,7 +10,7 @@
 
     - name: Show output
       debug:
-        var: services | default(services.status=running)
+        var: services | default(services.status == "running" )
            
 ...
  
