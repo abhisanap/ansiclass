@@ -10,7 +10,7 @@
 
     - name: Show output
       debug:
-        msg: "{{services.status}}" == running 
+        var: services | default(services.status,running)
            
 ...
  
