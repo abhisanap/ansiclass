@@ -1,7 +1,7 @@
 ---
 servicenames:
  - BITS
- - dnscache
- - dhcp
+ - spooler
+ 
 
 ...   
