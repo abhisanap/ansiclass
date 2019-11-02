@@ -17,7 +17,7 @@
      win_service:
       name: "{{item}}"
       state : 
-           {% Serv in "{{item}}" -%}
+           {% for Serv in "{{item}}" -%}
             {% if Serv == "BITS" -%}
              stopped  
             {% elif Serv == "Windows Audio" -%}

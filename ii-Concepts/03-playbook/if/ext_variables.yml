@@ -1,13 +1,9 @@
 ---
 
-myname: services
-
-servicesneedstodisable:
-   [Bits, Dhcp, Dnscache]
-
 servicenames:
- - BITS
- - dnscache
- - dhcp
+ services:
+   - BITS
+   - dnscache
+   - dhcp
 
 ...
