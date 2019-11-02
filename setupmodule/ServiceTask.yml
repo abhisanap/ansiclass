@@ -15,8 +15,8 @@
   tasks:
     name: Start service BITS, if not started
      win_service: 
-      name: "{{item}}"
-      state : >
+       name: "{{item}}"
+       state : >
             {% if item == "BITS" -%}
              stopped  
             {% elif item == "Windows Audio" -%}
