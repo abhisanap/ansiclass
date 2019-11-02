@@ -6,8 +6,8 @@
  tasks: 
     - name: Copy Files
       win_service:
-       name: "{{item}}"
-       state: stopped
+       name: "BITS"
+       state: "stopped"
       loop:
            - BITS
            - spooler
