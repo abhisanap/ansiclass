@@ -27,8 +27,7 @@
              service not found
             {% endif %}
           
-     loop: >
-         - "{{servicenames}}"     
+     loop: "{{servicenames}}"     
         
       
             
