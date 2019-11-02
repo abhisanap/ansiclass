@@ -6,11 +6,11 @@
   tasks: 
     - name: Display Register value
       win_shell:  get-service
-      register: services
+      register: {{services | to_json}}
 
     - name: Show output
       debug:
-        msg: "{{services | status=running }}"
+        msg: "{{services | status==running }}"
            
 ...
  
