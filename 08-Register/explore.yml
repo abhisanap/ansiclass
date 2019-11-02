@@ -10,7 +10,7 @@
 
     - name: Show output
       debug:
-        var: services | service.status == running
+        var: services.status == running 
            
 ...
  
