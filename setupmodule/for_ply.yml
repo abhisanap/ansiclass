@@ -2,12 +2,15 @@
 -
  hosts: all
   #gather_facts: true # this will make not to gather facts before running tasks
-
+ vars_files:
+    - Ext_variable.yml
  tasks: 
-    - name: Copy Files
+    - name: service task
       win_service:
-       name: "BITS"
+       name: "{{servicesneedstodisable}}"
        state: stopped
+
+        
 ...
 
 # you can try this for loop using range {% for number in range(1, 5) -%}
