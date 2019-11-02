@@ -7,8 +7,10 @@
  tasks: 
     - name: service task
       win_service:
-       name: "{{servicesneedstodisable}}"
+       name: "{{item}}"
        state: stopped
+      loop: >
+       - "{{servicesneedstodisable}}" 
 
         
 ...
