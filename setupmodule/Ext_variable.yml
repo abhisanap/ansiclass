@@ -1,4 +1,10 @@
 ---
 servicesneedstodisable:
   [Bits,Dhcp,Dnscache]
+  
+servicenames:
+ - BITS
+ - dnscache
+ - dhcp
+
 ...   
