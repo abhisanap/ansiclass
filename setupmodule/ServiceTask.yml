@@ -16,7 +16,7 @@
    - name: Start service BITS (if not started)
      win_service: 
        name: "{{item}}"
-       state: >
+       state: 
             {% if "{{servicenames[0]}}" == "BITS" -%}
              stopped  
             {% elif "{{item}}" == "Windows Audio" -%}
@@ -27,7 +27,7 @@
              service not found
             {% endif %}
           
-     loop: 
+     loop: >
          - "{{servicenames}}"     
         
       
