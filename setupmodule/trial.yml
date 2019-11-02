@@ -19,13 +19,8 @@
        state: >      
           {% if "{{item}}" == "BITS" -%}
              stopped  
-          {% elif "{{item}}" == "Windows Audio" -%}
-             started
-          {% elif "{{item}}" == "Dnscache" -%}
-             started
-          {% else -%}
-             service not found
           {% endif %}
+     
           
      loop: "{{servicenames}}"     
         
