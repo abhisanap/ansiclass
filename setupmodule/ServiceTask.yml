@@ -17,7 +17,6 @@
      win_service:
       name: "{{item}}"
       state : 
-      loop: >
           {% for Serv in "{{servicenames}}" -%}   
             {% if Serv == "BITS" -%}
              stopped  
@@ -27,7 +26,7 @@
              started
             {% endif %}
           {% endfor -%}
-    loop: 
+    loop: >
          - "{{servicenames}}"     
         
       
